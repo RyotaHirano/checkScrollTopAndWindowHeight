@@ -1,7 +1,6 @@
-# tournament
+# checkScrollTopAndWindowHeight
 
 ### Demo
-http://ryotahirano.github.io/tournament/
 
 #### Setting
 npm i
