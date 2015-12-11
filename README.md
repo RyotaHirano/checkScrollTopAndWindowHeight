@@ -1,9 +1,4 @@
 # checkScrollTopAndWindowHeight
 
 ### Demo
-
-#### Setting
-npm i
-
-#### Run
-npm start
+http://ryotahirano.github.io/checkScrollTopAndWindowHeight/
