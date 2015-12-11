@@ -1,0 +1,9 @@
+{
+  "extends": "tsumiki",
+  "plugins": [
+    "babel"
+  ],
+  "rules": {
+    "camelcase": [0, {"properties": "always"}]
+  }
+}
