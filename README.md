@@ -1,4 +1,7 @@
-# checkScrollTopAndWindowHeight [![Build Status](https://travis-ci.org/RyotaHirano/checkScrollTopAndWindowHeight.svg?branch=master)]
+# checkScrollTopAndWindowHeight [![][travis-badge]][travis-link]
 
 ### Demo
 http://ryotahirano.github.io/checkScrollTopAndWindowHeight/
+
+
+[travis-link]: https://travis-ci.org/RyotaHirano/checkScrollTopAndWindowHeight
