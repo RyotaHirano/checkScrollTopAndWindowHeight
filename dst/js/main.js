@@ -10346,7 +10346,7 @@ function scrollAnimation() {
     var targetScrollTop = (0, _jquery2.default)(e.target).scrollTop();
     console.log(targetScrollTop);
     if (targetScrollTop >= 1000) {
-      (0, _jquery2.default)('.a-item--1').stop().fadeTo('slow', 1);
+      (0, _jquery2.default)('.a-item--1').stop().animate({ opacity: '1' }, 200);
     } else {
       (0, _jquery2.default)('.a-item--1').stop().animate({ opacity: '0' }, 200);
     }

@@ -6,7 +6,7 @@ export default function scrollAnimation() {
     const targetScrollTop = $(e.target).scrollTop();
     console.log(targetScrollTop);
     if (targetScrollTop >= 1000) {
-      $('.a-item--1').stop().fadeTo('slow', 1);
+      $('.a-item--1').stop().animate({ opacity: '1' }, 200);
     } else {
       $('.a-item--1').stop().animate({ opacity: '0' }, 200);
     }
