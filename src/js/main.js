@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import scrollAnimation from './lib/scroll-animation';
 
 let domE;
 let domB;
@@ -7,6 +8,8 @@ let domB;
   $(document).ready(() => {
     domE = document.documentElement;
     domB = document.body;
+
+    scrollAnimation();
     resize();
   });
 

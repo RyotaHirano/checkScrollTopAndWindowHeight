@@ -10329,9 +10329,40 @@ return jQuery;
 },{}],2:[function(require,module,exports){
 'use strict';
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = scrollAnimation;
+
 var _jquery = require('jquery');
 
 var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function scrollAnimation() {
+  (0, _jquery2.default)('.animation-contents').scrollTop(0);
+  (0, _jquery2.default)('.animation-contents').scroll(function (e) {
+    var targetScrollTop = (0, _jquery2.default)(e.target).scrollTop();
+    console.log(targetScrollTop);
+    if (targetScrollTop >= 1000) {
+      (0, _jquery2.default)('.a-item--1').stop().fadeTo('slow', 1);
+    } else {
+      (0, _jquery2.default)('.a-item--1').stop().animate({ opacity: '0' }, 200);
+    }
+  });
+}
+
+},{"jquery":1}],3:[function(require,module,exports){
+'use strict';
+
+var _jquery = require('jquery');
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+var _scrollAnimation = require('./lib/scroll-animation');
+
+var _scrollAnimation2 = _interopRequireDefault(_scrollAnimation);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -10342,6 +10373,8 @@ var domB = undefined;
   (0, _jquery2.default)(document).ready(function () {
     domE = document.documentElement;
     domB = document.body;
+
+    (0, _scrollAnimation2.default)();
     resize();
   });
 
@@ -10403,4 +10436,4 @@ function renderViewArea() {
   (0, _jquery2.default)('.js-render-jQuery-viewArea').text(jQuery_viewArea);
 }
 
-},{"jquery":1}]},{},[2]);
+},{"./lib/scroll-animation":2,"jquery":1}]},{},[3]);

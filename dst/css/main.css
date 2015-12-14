@@ -26,7 +26,8 @@ body {
 
 .section {
   width: 100%;
-  height: 1000px; }
+  height: 1000px;
+  position: relative; }
   .section.section--1 {
     background-color: #d9e0f2; }
   .section.section--2 {
@@ -51,3 +52,41 @@ body {
     text-align: right;
     margin: 0;
     padding-right: 20px; }
+  .section .animation-wrap {
+    width: 960px;
+    height: 400px;
+    position: relative;
+    margin: 0 auto;
+    background-color: #777;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden; }
+    .section .animation-wrap .fixed-item {
+      width: 100px;
+      height: 100px;
+      background-color: #F9BB0D;
+      position: absolute;
+      top: 150px;
+      left: 50%;
+      margin-left: -50px; }
+    .section .animation-wrap .animation-items {
+      position: relative; }
+      .section .animation-wrap .animation-items .a-item--1 {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        top: 150px;
+        margin-left: 100px;
+        background: #0EB4AE;
+        opacity: 0; }
+    .section .animation-wrap .animation-contents {
+      width: 977px;
+      height: 400px;
+      position: relative;
+      overflow-y: scroll;
+      margin: 0;
+      padding: 0;
+      padding-right: 17px; }
+      .section .animation-wrap .animation-contents .animation-main {
+        height: 5000px;
+        position: relative; }
